@@ -1,6 +1,16 @@
 # Social Caption Generator
 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-blue?logo=tailwind-css)](https://tailwindcss.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-green?logo=openai)](https://openai.com/)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/short4ng4/social-caption-generator)
+
 A modern, AI-powered web application that generates engaging, platform-specific captions for Instagram, TikTok, LinkedIn, and Twitter. Built with Next.js, OpenAI GPT-4, and Tailwind CSS.
+
+![Social Caption Generator Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=Social+Caption+Generator+Preview)
 
 ## ✨ Features
 
@@ -124,21 +134,23 @@ Each platform has specific optimization settings:
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/short4ng4/social-caption-generator)
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Add your `OPENAI_API_KEY` to Vercel's environment variables
-4. Deploy!
+### Quick Deploy Options
 
-### Other Platforms
+**Vercel (Recommended):**
+1. Click the deploy button above
+2. Add your `OPENAI_API_KEY` environment variable
+3. Deploy in seconds!
 
-This is a standard Next.js application and can be deployed to any platform that supports Node.js:
-
+**Other Platforms:**
+This is a standard Next.js application that can be deployed to:
 - Netlify
-- Railway
+- Railway  
 - Heroku
 - DigitalOcean App Platform
+
+📖 **[Full Deployment Guide](DEPLOYMENT.md)** - Detailed instructions for all platforms
 
 ## 💡 Future Enhancements
 
@@ -155,7 +167,13 @@ This project is open source and available under the MIT License.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to submit issues and pull requests.
+Contributions are welcome! We'd love your help making this project even better.
+
+- 🐛 [Report bugs](https://github.com/short4ng4/social-caption-generator/issues)
+- 💡 [Request features](https://github.com/short4ng4/social-caption-generator/issues)
+- 🔧 [Submit pull requests](https://github.com/short4ng4/social-caption-generator/pulls)
+
+📖 **[Contributing Guide](CONTRIBUTING.md)** - How to contribute to the project
 
 ---
 
