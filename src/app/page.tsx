@@ -15,8 +15,15 @@ export default function HomePage() {
   const [generationsLeft, setGenerationsLeft] = useState(10)
 
   useEffect(() => {
-    // Initialize rate limiting
-    setGenerationsLeft(RateLimiter.getRemainingGenerations())
+    // Initialize rate limiting only on client side
+    const initializeRateLimit = () => {
+      setGenerationsLeft(RateLimiter.getRemainingGenerations())
+    }
+    
+    // Small delay to ensure client-side hydration is complete
+    const timeoutId = setTimeout(initializeRateLimit, 100)
+    
+    return () => clearTimeout(timeoutId)
   }, [])
 
   const handleGenerate = async (request: CaptionRequest) => {

@@ -51,6 +51,9 @@ export class RateLimiter {
   }
 
   static canGenerate(): boolean {
+    if (typeof window === 'undefined') {
+      return true // Allow on server side for initial render
+    }
     const session = this.getSession()
     return session.generationsUsed < session.maxGenerations
   }
@@ -69,6 +72,9 @@ export class RateLimiter {
   }
 
   static getRemainingGenerations(): number {
+    if (typeof window === 'undefined') {
+      return this.MAX_GENERATIONS // Default value for server side
+    }
     const session = this.getSession()
     return Math.max(0, session.maxGenerations - session.generationsUsed)
   }
